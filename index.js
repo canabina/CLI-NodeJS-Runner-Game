@@ -3,7 +3,7 @@ const readline = require('readline');
 
 class Game {
 
-    constructor (opts = {}) {
+    constructor (opts) {
 
         readline.emitKeypressEvents(process.stdin);
         process.stdin.setRawMode(true);
@@ -179,4 +179,6 @@ class Game {
     }
 }
 
-new Game ({});
+new Game ({
+    level: 1
+});
